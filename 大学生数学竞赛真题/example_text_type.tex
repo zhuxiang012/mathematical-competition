@@ -1,0 +1,1551 @@
+% 使用 ExBook 文档类，并传递选项
+\documentclass[loose]{ExBook} 
+\usepackage{enumitem}
+\usepackage{bbm}
+\everymath{\displaystyle}
+
+\begin{document}
+
+% 加载配置  
+\include{config}
+
+% 加载封面
+\maketitle 
+ 
+% 加载声明
+% \include{contents/pre} 
+
+% 加载广告
+% \include{contents/print}
+
+\setcounter{page}{1}
+\tableofcontents 
+    
+\clearpage 
+
+\section{历届全国大学生数学竞赛初赛试题(数学专业类)}
+\subsection{首届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem（本题 15 分）求经过三平行直线 \( L_1: x = y = z \), \( L_2: x - 1 = y = z + 1 \), \( L_3: x = y + 1 = z - 1 \) 的圆柱面的方程。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem（本题 20 分）设 \( \mathbb{C}^{n \times n} \) 是 \( n \times n \) 复矩阵全体在通常的运算下所构成的复数域 \(\mathbb{C}\) 上的线性空间，
+        
+        \[F = 
+        \begin{pmatrix}
+        0 & 0 & \cdots & 0 & -a_n \\
+        1 & 0 & \cdots & 0 & -a_{n-1} \\
+        0 & 1 & \cdots & 0 & -a_{n-2} \\
+        \vdots & \vdots & \ddots & \vdots & \vdots \\
+        0 & 0 & \cdots & 1 & -a_1
+        \end{pmatrix}\]
+        
+        (1) 假设 \( A = 
+        \begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22} & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{n1} & a_{n2} & \cdots & a_{nn}
+        \end{pmatrix} \), 若 \( AF = FA \)，证明：
+        
+        \[A = a_{n1} F^{n-1} + a_{n-11} F^{n-2} + \cdots + a_{21} F + a_{11} E;\]
+        
+        (2) 求 \( \mathbb{C}^{n \times n} \) 的子空间 \( C(F) = \{ X \in \mathbb{C}^{n \times n} | FX = XF \} \) 的维数。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem（本题 15 分）假设 \( V \) 是复数域 \(\mathbb{C}\) 上 \( n \) 维线性空间 \((n > 0)\), \( f, g \) 是 \( V \) 上的线性变换。如果 \( fg - gf = f \)，证明：\( f \) 的特征值都是 0，且 \( f, g \) 有公共特征向量。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem（本题 10 分）设 \(\{ f_n(x) \}\) 是定义在 \([a, b]\) 上的无穷阶可微的函数序列且逐点收敛，并在 \([a, b]\) 上满足 \(|f'_n(x)| \leq M\)。
+        
+        (1) 证明 \(\{ f_n(x) \}\) 在 \([a, b]\) 上一致收敛。
+        
+        (2) 设 \( f(x) = \lim\limits_{n \to \infty} f_n(x) \)，问 \( f(x) \) 是否一定在 \([a, b]\) 阶上处处可导，为什么？
+    \end{bbox}
+
+        \begin{bbox}
+        \qitem（本题 10 分）设 \( a_n = \displaystyle\int_0^{\frac{\pi}{2}} t \left| \frac{\sin nt}{\sin t} \right|^3 dt \)，证明 \[ \sum_{n=1}^{\infty} \frac{1}{a_n} \] 发散。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem（本题 15 分）设 \( f(x,y) \) 是 \(\{(x,y) | x^2 + y^2 \leq 1\}\) 上二阶连续可微函数，满足 \[ \frac{\partial^2 f}{\partial x^2} + \frac{\partial^2 f}{\partial y^2} = x^2 y^2, \]
+
+        计算积分 \[ I = \iint_{x^2 + y^2 \leq 1} \left( \frac{x}{\sqrt{x^2 + y^2}} \frac{\partial f}{\partial x} + \frac{y}{\sqrt{x^2 + y^2}} \frac{\partial f}{\partial y} \right) dxdy. \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem（本题 15 分）假设函数 \( f(x) \) 在 \([0,1]\) 上连续，在 \((0,1)\) 内二阶可导，过点 \( A(0,f(0)) \) 与点 \( B(1,f(1)) \) 的直线与曲线 \( y = f(x) \) 相交于点 \( C(c,f(c)) \)，其中 \( 0 < c < 1 \)。
+
+        证明：在 \((0,1)\) 内至少存在一点 \(\xi\)，使得 \( f''(\xi) = 0 \)。
+    \end{bbox}
+\end{qitems}
+\subsection{第二届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题 10 分) 设 \(\varepsilon \in (0,1)\), \(x_0 = a\), \(x_{n+1} = a + \varepsilon \sin x_n\) (\(n = 0,1,2,\cdots\)). 证明: \(\xi = \lim\limits_{n \to +\infty} x_n\) 存在, 且 \(\xi\) 为方程 \(x - \varepsilon \sin x = a\) 的唯一根.
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \(B = \begin{pmatrix}
+        0 & 10 & 30 \\
+        0 & 0 & 2010 \\
+        0 & 0 & 0
+        \end{pmatrix}\). 证明 \(X^2 = B\) 无解, 这里 \(X\) 为三阶未知复方阵.
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 10 分) 设 \(D \subset \mathbb{R}^2\) 是凸区域, 函数 \(f(x,y)\) 是凸函数. 证明或否定: \(f(x,y)\) 在 \(D\) 上连续.
+
+        注 函数 \(f(x,y)\) 为凸函数的定义是: \(\forall \alpha \in (0,1)\) 以及 \((x_1,y_1),(x_2,y_2) \in D\), 有
+        
+        \[ f(\alpha x_1 + (1-\alpha)x_2, \alpha y_1 + (1-\alpha)y_2) \leq \alpha f(x_1,y_1) + (1-\alpha)f(x_2,y_2) \]
+        
+        成立.
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 10 分) 设 \(f(x)\) 在 \([0,1]\) 上 Riemann 可积, 在 \(x = 1\) 可导, \(f(1) = 0\), \(f'(1) = a\). 证明:
+        
+        \[ \lim\limits_{n \to +\infty} n^2 \int_0^1 x^n f(x) \, dx = -a \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 已知二次曲面 \(\Sigma\) (非退化) 过以下九点:
+        
+        \[ A(1,0,0), \quad B(1,1,2), \quad C(1,-1,-2), \quad D(3,0,0), \quad E(3,1,2), \]
+        
+        \[ F(3,-2,-4), \quad G(0,1,4), \quad H(3,-1,-2), \quad I(5,2\sqrt{2},8). \]
+        
+        问 \(\Sigma\) 是哪一类曲面?
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) 设 \(A\) 为 \(n \times n\) 实矩阵 (未必对称), 对任一 \(n\) 维向量 \(\alpha = (a_1,a_2,\cdots,a_n)\), \(\alpha A\alpha^T \geq 0\) (这里 \(\alpha^T\) 表示 \(\alpha\) 的转置), 且存在 \(n\) 维向量 \(\beta\) 使得 \(\beta A\beta^T = 0\). 若对任意 \(n\) 维向量 \(x\) 和 \(y\), 当 \(x Ay^T \neq 0\) 时有 \(x Ay^T + y Ax^T \neq 0\). 证明: 对任意 \(n\) 维向量 \(v\), 都有 \(v A \beta^T = 0\).
+    \end{bbox}
+    \begin{bbox}
+        \qitem (本题 10 分) 设 \( f \) 在区间 \([0,1]\) 上 Riemann 可积，\( 0 \leq f \leq 1 \)。求证：对任何 \(\varepsilon > 0\)，存在只取值为 0 和 1 的分段（段数有限）常值函数 \( g(x) \)，使得 \(\forall [\alpha, \beta] \subseteq [0,1]\)，
+
+        \[
+        \left| \int_{\alpha}^{\beta} (f(x) - g(x)) dx \right| < \varepsilon.
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 10 分) 已知 \(\varphi : (0, +\infty) \rightarrow (0, +\infty)\) 是一个严格单调下降的连续函数，满足
+
+        \[
+        \lim\limits_{t \to 0^+} \varphi(t) = +\infty,
+        \]
+
+        且
+
+        \[
+        \int_0^{+\infty} \varphi(t) \, dt = \int_0^{+\infty} \varphi^{-1}(t) \, dt = a < +\infty,
+        \]
+
+        其中 \(\varphi^{-1}\) 表示 \(\varphi\) 的反函数。求证：
+
+        \[
+        \int_0^{+\infty} [\varphi(t)]^2 \, dt + \int_0^{+\infty} [\varphi^{-1}(t)]^2 \, dt \geq \frac{1}{2} a^{\frac{3}{2}}.
+        \]
+    \end{bbox}
+\end{qitems}
+\subsection{第三届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题 15 分) 已知四点 $(1,2,7),(4,3,3),(5,-1,6), (\sqrt{7}, \sqrt{7}, 0)$。试求过这四点的球面方程。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 10 分) 设 $f_1, f_2, \cdots, f_n$ 为 $[0,1]$ 上的非负连续函数，求证：存在 $\xi \in [0,1]$，使得
+        \[
+        \prod_{k=1}^{n} f_k(\xi) \leq \prod_{k=1}^{n} \int_{0}^{1} f_k(x) \, dx.
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 $V = F^n$ 是数域 $F$ 上的 $n$ 维列空间，$\sigma : F^n \to F^n$ 是一个线性变换。若
+        \[
+        \forall A \in M_n(F), \quad \sigma(A\alpha) = A\sigma(\alpha), \quad \forall \alpha \in F^n,
+        \]
+        其中 $M_n(F)$ 表示数域 $F$ 上的 $n$ 阶方阵全体，证明：$\sigma = \lambda \cdot Id_{F^n}$，其中 $\lambda$ 是 $F$ 中的某个数，$Id_{F^n}$ 表示恒等变换。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 10 分) 对于 $\triangle ABC$，求 $3\sin A + 4\sin B + 18\sin C$ 的最大值。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 对于任何实数 $\alpha$，求证存在取值于 $\{-1,1\}$ 的数列 $\{a_n\}_{n \geq 1}$ 使得
+        \[
+        \lim\limits_{n \to +\infty} \left( \sum_{k=1}^{n} \sqrt{n + a_k - n^{\frac{3}{2}}} \right) = \alpha.
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) 设 $A$ 是数域 $F$ 上的 $n$ 阶方阵。证明：$A$ 在数域 $F$ 上相似于
+        \[
+        \begin{pmatrix}
+        B & O \\
+        O & C 
+        \end{pmatrix},
+        \]
+        其中 $B$ 是可逆矩阵，$C$ 是幂零矩阵（即存在 $m$ 使得 $C^m = O$）。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 $F(x)$ 是 $[0,+\infty)$ 上的单调递减函数，$\lim\limits_{x \to +\infty} F(x) = 0$，且
+        \[
+        \lim\limits_{n \to +\infty} \int_{0}^{+\infty} F(t) \sin \frac{t}{n} \, dt = 0.
+        \]
+        证明：(i) $\lim\limits_{x \to +\infty} xF(x) = 0$; (ii) $\lim\limits_{x \to 0} \int_{0}^{+\infty} F(t) \sin(xt) \, dt = 0$。
+    \end{bbox}
+\end{qitems}
+\subsection{第四届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \(\Gamma\) 为椭圆抛物面 \(z = 3x^2 + 4y^2 + 1\). 从原点作 \(\Gamma\) 的切锥面. 求切锥面的方程.
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \(\Gamma\) 为抛物线, \(P\) 是与焦点位于抛物线同侧的一点. 过 \(P\) 的直线 \(L\) 与 \(\Gamma\) 围成的有界区域的面积记作 \(A(L)\). 证明: \(A(L)\) 取最小值当且仅当 \(P\) 恰为 \(L\) 被 \(\Gamma\) 所截出的线段的中点.
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 10 分) 设 \(f \in C^1[0,+\infty)\), \(f(0)>0\), 且 \(\forall x \in [0,+\infty)\), \(f'(x) \geq 0\). 已知
+        \[\int_0^{+\infty} \frac{1}{f(x)+f'(x)} \, dx < +\infty,\]
+        求证:
+        \[\int_0^{+\infty} \frac{1}{f(x)} \, dx < +\infty.\]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \(A,B,C\) 均为 \(n\) 阶正定矩阵, \(P(t) = At^2 + Bt + C\), \(f(t) = \det P(t)\), 其中 \(t\) 为未定元, \(\det P(t)\) 表示 \(P(t)\) 的行列式. 若 \(\lambda\) 是 \(f(t)\) 的根, 试证明: \(\mathrm{Re}(\lambda)<0\), 这里 \(\mathrm{Re}(\lambda)\) 表示 \(\lambda\) 的实部.
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 10 分) 已知
+        \(\frac{(1+x)^n}{(1-x)^3} = \sum_{i=0}^{\infty} a_i x^i, |x|<1, n \text{ 为正整数, 求 } \sum_{i=0}^{n-1} a_i.\)
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \(f:[0,1] \rightarrow \mathbb{R}\) 可微, \(f(0)=f(1)\), \(\int_0^1 f(x) \, dx = 0\), 且 \(\forall x \in [0,1], f'(x) \neq 1\). 求证: 对于任意正整数 \(n\), 有
+        \[\left| \sum_{k=0}^{n-1} f\left(\frac{k}{n}\right) \right| < \frac{1}{2}.\]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) 已知实矩阵 \(A = 
+        \begin{pmatrix}
+        2 & 2 \\
+        2 & a
+        \end{pmatrix}, B = 
+        \begin{pmatrix}
+        4 & b \\
+        3 & 1
+        \end{pmatrix}\). 证明:
+
+        (1) 矩阵方程 \(AX = B\) 有解但 \(BY = A\) 无解的充要条件是 \(a \neq 2, b = \frac{4}{3}\).
+
+        (2) \(A\) 相似于 \(B\) 的充要条件是 \(a = 3, b = \frac{2}{3}\).
+
+        (3) \(A\) 合同于 \(B\) 的充要条件是 \(a < 2, b = 3\).
+    \end{bbox}
+\end{qitems}
+\subsection{第五届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题 15 分) 平面 \(\mathbb{R}^2\) 上两个半径为 \(r\) 的圆 \(C_1, C_2\) 外切于 \(P\) 点，将圆 \(C_2\) 沿 \(C_1\) 的圆周（无滑动）滚动一周，这时 \(C_2\) 上的 \(P\) 点也随 \(C_2\) 的运动而运动。记 \(I\) 为 \(P\) 点的运动轨迹曲线，称为心脏线。现设 \(C\) 为以 \(P\) 的初始位置（切点）为圆心的圆，其半径为 \(R\)。记 \(\gamma : \mathbb{R}^2 \cup \{ \infty \} \rightarrow \mathbb{R}^2 \cup \{ \infty \}\) 为圆 \(C\) 的反演变换，它将 \(Q \in \mathbb{R}^2 \backslash \{ P \}\) 映成射线 \(PQ\) 上的点 \(Q'\)，满足 \(PQ \cdot PQ' = R^2\)。求证：\(\gamma (I)\) 为抛物线。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 10 分) 设 \(n\) 阶方阵 \(B(t)\) 和 \(n \times 1\) 矩阵 \(b(t)\) 分别为
+        \[ B(t) = (b_{ij}(t)) , \quad b(t) = (b_1(t), b_2(t), \cdots, b_n(t))^T , \]
+        其中 \(b_{ij}(t), b_i(t)\) 均为关于 \(t\) 的实系数多项式，\(i, j = 1, 2, \cdots, n\)。记 \(d(t)\) 为 \(B(t)\) 的行列式，\(d_i(t)\) 为用 \(b(t)\) 替代 \(B(t)\) 的第 \(i\) 列后所得的 \(n\) 阶矩阵的行列式。若 \(d(t)\) 有实根 \(t_0\)，使得 \(B(t_0)x = b(t_0)\) 成为关于 \(x\) 的相容线性方程组，试证明：\(d(t), d_1(t), \cdots, d_n(t)\) 必有次数大于等于 1 的公因式。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \(f(x)\) 在区间 \([0, a]\) 上有二阶连续导数，\(f'(0) = 1, f''(0) \neq 0\) 且 \(\forall x \in (0, a), 0 < f(x) < x\)。令 \(x_1 \in (0, a), x_{n+1} = f(x_n) (n \geq 1)\)。
+        
+        (1) 求证 \(\{x_n\}\) 收敛并求极限。
+        (2) 试问 \(\{nx_n\}\) 是否收敛？若不收敛，则说明理由；若收敛，则求其极限。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \(a > 1\)，函数 \(f : (0, +\infty) \rightarrow (0, +\infty)\) 可微，求证：存在趋于无穷的正数列 \(\{x_n\}\) 使得 \(f'(x_n) < f(ax_n) (n = 1, 2, \cdots)\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) 设 \(f : [-1, 1] \rightarrow \mathbb{R}\) 为偶函数，\(f\) 在 \([0, 1]\) 上单调递增，又设 \(g\) 是 \([-1, 1]\) 上的凸函数，即对任意 \(x, y \in [-1, 1]\) 及 \(t \in (0, 1)\) 有
+        \[ g(tx + (1 - t)y) \leq tg(x) + (1 - t)g(y). \]
+        
+        求证：\(2 \int_{-1}^{1} f(x)g(x) \, dx \geq \int_{-1}^{1} f(x) \, dx \int_{-1}^{1} g(x) \, dx.\)
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 25 分) 设 \(\mathbb{R}^{n \times n}\) 为 \(n\) 阶实方阵全体，\(E_{ij}\) 为 \((i, j)\) 位置元素为 1，其余位置元素为 0 的 \(n\) 阶方阵，\(i, j = 1, 2, \cdots, n\)。令 \(\Gamma_r\) 为秩等于 \(r\) 的 \(n\) 阶实方阵全体，\(r = 0, 1, 2, \cdots, n\)，并让 \(\phi : \mathbb{R}^{n \times n} \rightarrow \mathbb{R}^{n \times n}\) 为可乘映射，即满足 \(\phi (AB) = \phi (A)\phi (B), \forall A, B \in \mathbb{R}^{n \times n}\)。试证明：
+        
+        (1) \(\forall A, B \in \Gamma_r\), 秩 \(\phi(A) = \) 秩 \(\phi(B)\)。
+        
+        (2) 若 \(\phi(0) = 0\)，且存在某个秩为 1 的矩阵 \(W\)，使得 \(\phi(W) \neq 0\)，则必存在可逆方阵 \(R\) 使得 \(\phi(E_{ij}) = RE_{ij}R^{-1}\) 对于一切 \(E_{ij}\) 皆成立，\(i, j = 1, 2, \cdots, n\)。
+    \end{bbox}
+\end{qitems}
+\subsection{第六届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题 15 分) 已知空间的两条直线
+        \[ l_1: \frac{x-4}{1} = \frac{y-3}{-2} = \frac{z-8}{1}, \quad l_2: \frac{x+1}{7} = \frac{y+1}{-6} = \frac{z+1}{1}. \]
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item 证明 \( l_1 \) 和 \( l_2 \) 异面。
+            \item 求 \( l_1 \) 和 \( l_2 \) 公垂线的标准方程。
+            \item 求连接 \( l_1 \) 上任一点和 \( l_2 \) 上任一点的线段中点的轨迹的一般方程。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( f \in C[0,1] \) 是非负的严格单调递增函数。证明：
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item 对于任意的 \( n \in \mathbb{N} \)，存在唯一的 \( x_n \in [0,1] \)，使得 \( (f(x_n))^n = \int_{0}^{1} (f(x))^n \, dx \)。
+            \item \(\lim\limits_{n \to \infty} x_n = 1. \)
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( V \) 为闭区间 \([0,1]\) 上全体实函数构成的实向量空间，其中向量加法和纯量乘法均为通常的。又设 \( f_1, f_2, \cdots, f_n \in V \)，证明以下两条等价：
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item \( f_1, f_2, \cdots, f_n \) 线性无关；
+            \item \(\exists a_1, a_2, \cdots, a_n \in [0,1] \) 使得 \( \det [f_i(a_j)] \neq 0 \)，这里 \( \det \) 表示行列式。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( f(x) \) 在 \( \mathbb{R} \) 上有二阶导函数，\( f(x), f'(x), f''(x) \) 均大于零。假设存在正数 \( a, b \)，使得 \( f''(x) \leq af(x) + bf'(x) \) 对于一切 \( x \in \mathbb{R} \) 成立。
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item 求证：\( \lim\limits_{x \to -\infty} f'(x) = 0. \)
+            \item 求证：存在常数 \( c \) 使得 \( f'(x) \leq cf(x). \)
+            \item 求使上面不等式成立的最小常数 \( c \)。
+        \end{enumerate}
+    \end{bbox}
+     \begin{bbox}
+        \qitem (本题 20 分) 设 \( m \) 为给定的正整数。证明：对任何的正整数 \( n, l \)，存在 \( m \) 阶方阵 \( X \) 使得
+        \[X^n + X^l = I + 
+        \begin{pmatrix}
+        1 & 0 & 0 & \cdots & 0 & 0 \\
+        2 & 1 & 0 & \cdots & 0 & 0 \\
+        3 & 2 & 1 & \cdots & 0 & 0 \\
+        \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
+        m-1 & m-2 & m-3 & \cdots & 1 & 0 \\
+        m & m-1 & m-2 & \cdots & 2 & 1
+        \end{pmatrix}\]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) 设 \( \alpha \in (0, 1) \)，\(\{a_n\}\) 是正数列且满足
+        \[
+        \lim\limits_{n \to \infty} n^\alpha \left( \frac{a_n}{a_{n+1}} - 1 \right) = \lambda \in (0, +\infty).
+        \]
+        求证：\(\lim\limits_{n \to \infty} n^k a_n = 0\)，其中 \( k > 0 \)。
+    \end{bbox}
+\end{qitems}
+\subsection{第七届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( l_1 \) 和 \( l_2 \) 是空间中两异面直线。设在标准直角坐标系下直线 \( l_1 \) 过坐标为 \( {a} \) 的点，以单位向量 \( \vec{v} \) 为直线方向；
+        直线 \( l_2 \) 过坐标为 \( {b} \) 的点，以单位向量 \( \vec{w} \) 为直线方向。
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item 证明：存在唯一一点 \( P \in l_1 \) 和 \( Q \in l_2 \) 使得两点连线 \( PQ \) 同时垂直于 \( l_1 \) 和 \( l_2 \)。
+            \item 求 \( P \) 点和 \( Q \) 点的坐标（用 \( {a}, {b}, \vec{v}, \vec{w} \) 表示）。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) \( A \) 为 4 阶复方阵，它满足关于迹的关系式 \( \mathrm{tr}(A^i) = i, i = 1, 2, 3, 4 \)。求 \( A \) 的行列式。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( A \) 为 \( n \) 阶方阵，其 \( n \) 个特征值皆为偶数。试证明：关于 \( X \) 的矩阵方程
+        \[X + AX - XA^2 = O\]
+        只有零解。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 数列 \(\{a_n\}\) 满足关系式 \( a_1 > 0, a_{n+1} = a_n + \frac{n}{a_n} (n \geq 1) \)。求证：
+        \[
+        \lim\limits_{n \to \infty} n(a_n - n)
+        \]
+        存在。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( f(x) \) 是 \([0, +\infty)\) 上有界连续函数，\( h(x) \) 是 \([0, +\infty)\) 上连续函数，且
+        \[
+        \int_0^{+\infty} |h(t)| \, dt = a < 1.
+        \]
+        构造函数序列：
+        \[
+        g_0(x) = f(x), \quad g_n(x) = f(x) + \int_0^x h(t)g_{n-1}(t) \, dt, \quad n = 1, 2, \cdots,
+        \]
+        求证：\(\{g_n(x)\}\) 收敛于一个连续函数，并求极限函数。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) 设 \( f(x) \) 是 \( \mathbb{R} \) 上有下界或者有上界的连续函数，且存在正数 \( a \) 使得
+        \[
+        f(x) + a \int_{x-1}^x f(t) \, dt
+        \]
+        为常数。求证：\( f(x) \) 必为常数。
+    \end{bbox}
+\end{qitems}
+\subsection{第崛全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( S \) 是空间中的一个椭球面。又设方向为常向量 \( V \) 的一束平行光照射 \( S \)，其中部分光线与 \( S \) 相切，它们的切点在 \( S \) 上形成一条曲线 \( \Gamma \)。证明：\( \Gamma \) 落在一张过椭球中心的平面上。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( n \) 为奇数，\( A, B \) 为两个 \( n \) 阶实方阵，且 \( BA = O \)。记 \( A + J_A \) 的特征值集合为 \( S_1 \)，\( B + J_B \) 的特征值集合为 \( S_2 \)，其中 \( J_A, J_B \) 分别表示 \( A, B \) 的 Jordan 标准形。求证：\( 0 \in S_1 \cup S_2 \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) 设 \( A_1, A_2, \cdots, A_{2017} \) 为 2016 阶实方阵。证明：关于 \( x_1, x_2, \cdots, x_{2017} \) 的方程
+        \[
+        \det (x_1 A_1 + x_2 A_2 + \cdots + x_{2017} A_{2017}) = 0
+        \]
+        至少有一组非零实数解，其中 \(\det\) 表示行列式。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 20 分) 设 \( f_0(x), f_1(x) \) 是 \([0, 1]\) 上正连续函数，满足
+        \[
+        \int_0^1 f_0(x) dx \leq \int_0^1 f_1(x) dx.
+        \]
+        设
+        \[
+        f_{n+1}(x) = \frac{2f_n^2(x)}{f_n(x) + f_{n-1}(x)} \quad (n=1, 2, \cdots),
+        \]
+        设
+        \[
+        a_n = \int_0^1 f_n(x) dx \quad (n=1, 2, \cdots),
+        \]
+        求证：数列 \(\{a_n\}\) 单调递增且收敛。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( \alpha > 1 \)。求证：不存在 \([0, +\infty)\) 上可导的正函数 \( f(x) \) 满足
+        \[
+        f'(x) \geq f^\alpha(x), \quad x \in [0, +\infty).
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题 15 分) 设 \( f(x), g(x) \) 是 \([0, 1]\) 区间上的单调递增函数，满足
+        \[
+        0 \leq f(x), g(x) \leq 1, \quad \int_0^1 f(x) dx = \int_0^1 g(x) dx.
+        \]
+        求证：
+        \[
+        \int_0^1 |f(x) - g(x)| dx \leq \frac{1}{2}.
+        \]
+    \end{bbox}
+\end{qitems}
+\subsection{第九届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题15分) 在空间直角坐标系中，设单叶双曲面 \(\Gamma\) 的方程为 \(x^2 + y^2 - z^2 = 1\)。又设 \(P\) 为空间中的平面，它交 \(\Gamma\) 于一抛物线 \(C\)。求该平面 \(P\) 的法线与 \(z\) 轴的夹角。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题15分) 设 \(\{a_n\}\) 是递增数列，\(a_1 > 1\)。求证：级数 
+        \[ 
+        \sum_{n=1}^{\infty} \frac{a_{n+1} - a_n}{a_n \ln a_{n+1}} 
+        \] 
+        收敛的充分必要条件是 \(\{a_n\}\) 有界。又问级数通项分母中的 \(a_n\) 是否可以换成 \(a_{n+1}\)？
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题15分) 设 \(\Gamma = \{W_1, W_2, \cdots, W_r\}\) 为 \(r\) 个互不相同的可逆的 \(n\) 阶复方阵构成的集合。若该集合关于矩阵乘法封闭（即 \(\forall M, N \in \Gamma\), 有 \(MN \in \Gamma\)），证明：
+        \( 
+        \sum_{i=1}^{r} W_i = 0 
+        \)
+        当且仅当 
+        \(
+        \sum_{i=1}^{r} \mathrm{tr}(W_i) = 0 
+        \)，
+        其中 \(\mathrm{tr}(W_i)\) 表示 \(W_i\) 的迹。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题20分) 给定非零实数 \(a\) 及实 \(n\) 阶反对称矩阵 \(A\)（即 \(A\) 满足 \(A\) 的转置 \(A^T\) 等于 \(-A\)）。记矩阵有序对集合 \(T\) 为 
+        \[ 
+        T = \{(X, Y) | X \in \mathbb{R}^{n \times n}, Y \in \mathbb{R}^{n \times n}, XY = aI + A\}
+        \]，
+        其中 \(I\) 为 \(n\) 阶单位阵，\(\mathbb{R}^{n \times n}\) 为所有实 \(n\) 阶方阵构成的集合。证明：任取 \(T\) 中的两元 \((X, Y)\) 和 \((M, N)\)，必有 \(XN + Y^T M^T \neq O\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题15分) 设 \(f(x) = \arctan x\), \(A\) 为常数。若 
+        \[
+        B = \lim\limits_{n \to \infty} \left( \sum_{k=1}^{n} f\left(\frac{k}{n}\right) - An \right)
+        \]
+        存在，求 \(A, B\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题20分) 设 \(f(x) = 1 - x^2 + x^3 (x \in [0, 1])\)，计算以下极限并说明理由：
+        \[
+        \lim\limits_{n \to \infty} \frac{\displaystyle\int_{0}^{1} f^n(x) \ln (x + 2) \, dx}{\displaystyle\int_{0}^{1} f^n(x) \, dx}
+        \]
+    \end{bbox}
+\end{qitems}
+\subsection{第十届全国大学生数学竞赛初赛试题(数学专业类)}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题15分) 在空间直角坐标系中，设马鞍面 \( S \) 的方程为 \( x^2 - y^2 = 2z \)。又设 \(\sigma\) 为平面 \( z = \alpha x + \beta y + \gamma \)，其中 \(\alpha, \beta, \gamma\) 为给定常数。求马鞍面 \( S \) 上点 \( P \) 的坐标，使得过 \( P \) 且落在马鞍面 \( S \) 上的直线均平行于平面 \(\sigma\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题15分) \( A = (a_{ij})_{n \times n} \) 为 \( n \) 阶实方阵，满足
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item \( a_{11} = a_{22} = \cdots = a_{nn} = a > 0 \);
+            \item 对每个 \( i(i = 1, 2, \cdots, n) \)，有 \( \sum_{j=1}^{n} |a_{ij}| + \sum_{j=1}^{n} |a_{ji}| < 4a, \)
+        \end{enumerate}
+        
+        求 \( f(x_1, \cdots, x_n) = (x_1, \cdots, x_n)A \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} \) 的规范形。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题20分) 元素皆为整数的矩阵称为整矩阵。设 \( n \) 阶方阵 \( A, B \) 皆为整矩阵。
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item 证明以下两条等价：
+            \begin{enumerate}[label=(\roman*)]
+                \item \( A \) 可逆且 \( A^{-1} \) 仍为整矩阵；
+                \item \( A \) 的行列式的绝对值为1。
+            \end{enumerate}
+            \item 若又知 \( A, A-2B, A-4B, \cdots, A-2nB, A-2(n+1)B, \cdots, A-2(n+n)B \) 皆可逆，且它们的逆矩阵皆为整矩阵。证明：\( A+B \) 可逆。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题15分) 设 \( f(x) \) 在 \([0, 1]\) 上连续可微，在 \( x = 0 \) 处有任意阶导数，\( f^{(n)}(0) = 0 (\forall n \geq 0) \)，且存在常数 \( C > 0 \) 使得 \[ |xf'(x)| \leq C|f(x)|, \quad \forall x \in [0, 1]. \]
+        
+        证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item \( \lim\limits_{x \to 0^{+}} \frac{f(x)}{x^n} = 0 (\forall n \geq 0); \)
+            \item 在 \([0, 1]\) 上 \( f(x) \equiv 0 \) 成立。
+        \end{enumerate}
+    \end{bbox}
+ \begin{bbox}
+        \qitem (本题15分) 设 \(\{a_n\}, \{b_n\}\) 是两个数列，\(a_n > 0 (n \geq 0), \sum_{n=1}^{\infty} b_n\) 绝对收敛，且
+        \[
+        \frac{a_n}{a_{n+1}} \leq 1 + \frac{1}{n} + \frac{1}{n \ln n} + b_n, \quad n \geq 2.
+        \]
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item 求证：\(\frac{a_n}{a_{n+1}} < \frac{n+1}{n} \cdot \frac{\ln(n+1)}{\ln n} + b_n (n \geq 2)\);
+            \item 求证：\(\sum_{n=1}^{\infty} a_n\) 发散。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题20分) 设 \(f: \mathbb{R} \to (0,+\infty)\) 是一可微函数，且对所有 \(x,y \in \mathbb{R}\)，有
+        \[
+        |f'(x) - f'(y)| \leq |x-y|^\alpha,
+        \]
+        其中 \(\alpha \in (0,1]\) 是常数。求证：对所有 \(x \in \mathbb{R}\)，有
+        \[
+        |f'(x)|^{\frac{\alpha+1}{\alpha}} < \frac{\alpha+1}{\alpha} f(x).
+        \]
+    \end{bbox}
+\end{qitems}
+\subsection{第十一届全国大学生数学竞赛数学专业竞赛(A卷)试题}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (本题15分) 空间中有两个圆球面 \( B_1 \) 和 \( B_2 \)，\( B_2 \) 包含在 \( B_1 \) 所围球体的内部，两球面之间的闭区域为 \( D \)。设 \( B \) 是含在 \( D \) 中的一个圆球，它与球面 \( B_1 \) 和 \( B_2 \) 均相切。问：
+        
+        \begin{enumerate}[label=(\roman*)]
+            \item \( B \) 的球心轨迹构成的曲面 \( S \) 是何种曲面；
+            \item \( B_1 \) 的球心和 \( B_2 \) 的球心是曲面 \( S \) 的何种点。
+        \end{enumerate}
+        证明你的论断。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题15分) 设 \( \alpha > 0 \)，\( f(x) \) 在 \([0,1]\) 上非负，有二阶导函数，\( f(0) = 0 \)，且在 \([0,1]\) 上不恒为零。求证：存在 \(\xi \in (0,1)\) 使得 \(\xi f''(\xi) + (\alpha + 1)f'(\xi) > \alpha f(\xi)\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题15分) 设 \( A \) 为 \( n \) 阶复方阵，\( p(x) \) 为 \( I - \overline{A}A \) 的特征多项式，其中 \( \overline{A} \) 表示 \( A \) 的共轭矩阵。证明：\( p(x) \) 必为实系数多项式。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题20分) 已知 \( f_1 \) 为实 \( n \) 元正定二次型。令
+        \[
+        V = \{ f | f \text{为实 } n \text{ 元二次型，满足：对任何实数 } k \text{ 有 } kf + f_1 \text{ 属于恒号二次型} \},
+        \]
+        这里恒号二次型为0二次型，正定二次型及负定二次型的总称。证明：\( V \) 按照通常的二次型加法和数乘构成一个实向量空间，并求这个向量空间的维数。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题15分) 设 \( \delta > 0 \)，\( \alpha \in (0,1) \)，实数列 \(\{ x_n \}\) 满足
+        \[
+        x_{n+1} = x_n \left( 1 - \frac{h_n}{n^\alpha} \right) + \frac{1}{n^{\alpha + \delta}}, \quad n \geq 1
+        \]
+        其中 \(\{ h_n \}\) 有正的上下界。证明：\(\{ n^\delta x_n \}\) 有界。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (本题20分) 设 \( f(x) = \frac{1}{1 + e^x} \)。
+        
+        \begin{enumerate}[label=(\roman*)]
+            \item 证明 \( f(x) \) 是 \([0,+\infty)\) 上的凸函数。进一步，证明当 \( x, y \geq 0 \) 时成立
+            \[
+            f(x) + f(y) \leq f(0) + f(x + y).
+            \]
+            \item 设 \( n \geq 3 \)，试确定集合
+            \[
+            E \equiv \left\{ \sum_{k=1}^n f(x_k) \middle| \sum_{k=1}^n x_k = 0, x_1, \ldots, x_n \in \mathbb{R} \right\}.
+            \]
+        \end{enumerate}
+    \end{bbox}
+\end{qitems}
+\subsection{第十一届全国大学生数学竞赛数学专业竞赛(B)试题}
+\begin{qitems}
+    \begin{bbox}
+        \qitem （本题15分）设 \( L_1 \) 和 \( L_2 \) 是空间中的两条不垂直的异面直线，点 \( B \) 是它们公垂线段的中点。点 \( A_1 \) 和 \( A_2 \) 分别在 \( L_1 \) 和 \( L_2 \) 上滑动，使得 \( A_1B \perp A_2B \)。证明直线 \( A_1A_2 \) 的轨迹是单叶双曲面。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem （本题10分）计算 \[ \int_{0}^{+\infty} \frac{dx}{\left(1+x^2\right)\left(1+x^{2019}\right)} \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem （本题15分）设数列 \(\{x_n\}\) 满足：
+        \[ x_1 > 0, x_{n+1} = \ln\left(1+x_n\right), n=1,2,\cdots. \]
+        证明：\(\{x_n\}\) 收敛并求其极限值。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem （本题15分）设 \(\{\epsilon_1, \cdots, \epsilon_n\}\) 是 \( n \) 维实线性空间 \( V \) 的一组基，令 \(\epsilon_1 + \epsilon_2 + \cdots + \epsilon_n + \epsilon_{n+1} = 0\)。证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item 对 \( i = 1,2,\cdots,n+1, \{\epsilon_1, \cdots, \epsilon_{i-1}, \epsilon_{i+1}, \cdots, \epsilon_{n+1}\} \) 都构成 \( V \) 的基；
+            \item ∀ \(\alpha \in V\)，在(1)中的 \( n+1 \) 组基中，必存在一组基使 \(\alpha\) 在此基下的坐标分量均非负；
+            \item 若 \(\alpha = a_1\epsilon_1 + a_2\epsilon_2 + \cdots + a_n\epsilon_n\)，且 \(\left|a_i\right| (i=1,2,\cdots,n)\) 互不相同，则在(1)中的 \( n+1 \) 组基中，满足(2)中非负坐标表示的基是唯一的。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem （本题20分）设 \( A \) 是数域 \( F \) 上的 \( n \) 阶矩阵，若 \( A^2 = I_n(I_n \) 表示单位矩阵)，则称 \( A \) 为对合矩阵。试证：
+        \begin{enumerate}[label=(\arabic*)]
+            \item 若 \( A \) 是 \( n \) 阶对合矩阵，则
+            \[\text{rank}\left(I_n + A\right) + \text{rank}\left(I_n - A\right) = n;\]
+            \item \( n \) 阶对合矩阵 \( A \) 一定可以对角化，其相似对角形为
+            \[ \begin{pmatrix} I_r & 0 \\ 0 & -I_{n-r} \end{pmatrix}, \]
+            其中 \( r = \text{rank} \left( I_n + A \right) \)；
+            \item 若 \( A, B \) 均是 \( n \) 阶对合矩阵，且 \( AB = BA \)，则存在可逆矩阵 \( P \)，使得 \( P^{-1}AP \) 和 \( P^{-1}BP \) 同时为对角矩阵。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem （本题15分）设函数 \( f(x) \) 为闭区间 \([a, b]\) 上的连续凹函数，满足
+        \[ f(a) = 0, f(b) > 0 \]
+        且 \( f(x) \) 在 \( x = a \) 处存在非零的右导数。对 \( n \geq 2 \)，记
+        \[ S_n = \left\{ \sum_{k=1}^{n} kx_k : \sum_{k=1}^{n} kf(x_k) = f(b), x_k \in [a, b] \right\} \]
+        \begin{enumerate}[label=(\arabic*)]
+            \item 证明对 \(\forall \alpha \in (0, f(b))\)，存在唯一 \( x \in (a, b) \) 使得
+            \( f(x) = \alpha; \)
+            \item 求 \(\lim_{n \to \infty} (\sup S_n - \inf S_n)\)。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem （本题10分）设正项级数
+        \( \sum_{n=1}^{\infty} \frac{1}{a_n} \)
+        收敛。证明级数
+        \( \sum_{n=1}^{\infty} \frac{n^2 a_n}{S_n^2} \)
+        收敛，其中
+        \( S_n = \sum_{k=1}^{n} a_k. \)
+    \end{bbox}
+\end{qitems}
+\subsection{第十二届全国大学生数学竞赛初赛《数学类A卷》试题}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 设 \( N(0,0,1) \) 是球面 \( S: x^2 + y^2 + z^2 = 1 \) 的北极点。\( A(a_1,a_2,0),B(b_1,b_2,0),C(c_1,c_2,0) \) 为 \( xOy \) 面上不同的三点。设连接 \( N \) 与 \( A,B,C \) 的三直线依次交球面 \( S \) 于点 \( A_1, B_1, C_1 \)。
+
+        \begin{enumerate}[label=(\arabic*)]
+            \item 求连接 \( N \) 与 \( A \) 两点的直线方程；
+            \item 求点 \( A_1, B_1, C_1 \) 三点的坐标；
+            \item 给定点 \( A(1,-1,0),B(-1,1,0),C(1,1,0) \)，求四面体 \( NA_1B_1C_1 \) 的体积。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 求极限
+        \[I = \lim\limits_{n \to \infty} \frac{\ln n}{\ln \left( 1^{2020} + 2^{2020} + \cdots + n^{2020} \right)}\]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( A,B \) 均为 2020 阶正交矩阵，齐次线性方程组
+        \[Ax = Bx \quad (x \in \mathbb{R}^{2020})\]
+        的解空间维数为 3。问：矩阵 \( A,B \) 是否可能相似？证明你的结论。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 称非常值一元 \( n \) 次多项式（合并同类项后的 \( n-1 \) 次项（可能为 0）为第二项。求所有 2020 次复系数首一多项式 \( f(x) \)，满足对 \( f(x) \) 的每个复根 \( x_k \)，都存在非常值复系数首一多项式 \( g_k(x) \) 和 \( h_k(x) \)，使得
+        \[f(x) = (x - x_k)g_k(x)h_k(x)\]
+        且 \( g_k(x) \) 和 \( h_k(x) \) 的第二项系数相等。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( \varphi \) 是上严格单调增加的连续函数，\( \psi \) 是 \( \varphi \) 的反函数，实数列 \(\{x_n\}\) 满足
+        \[x_{n+2} = \psi \left( \left( 1 - \frac{1}{\sqrt{n}} \right) \varphi \left( x_n \right) + \frac{1}{\sqrt{n}} \varphi \left( x_{n+1} \right) \right), \, n \geq 2.\]
+        证明：\(\{x_n\}\) 收敛或举例说明 \(\{x_n\}\) 有可能发散。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 对于有界区间 \([a, b]\) 的划分
+        \[P : a = x_0 < x_1 < \cdots < x_{n+1} = b\]
+        其范数定义为 \(\|P\| = \max_{0 \leq k \leq n} (x_{k+1} - x_k)\)。现设 \([a, b]\) 上函数 \(f\) 满足 Lipschitz 条件，即存在常数 \(M > 0\)，使得对任何 \(x, y \in [a, b]\)，成立 \(|f(x) - f(y)| \leq M |x - y|\)。定义
+        \[s(f; P) \equiv \sum_{k=0}^n \sqrt{(x_{k+1} - x_k)^2 + |f(x_{k+1}) - f(x_k)|^2}\]
+        若 \(\lim\limits_{\|P\|\to 0^+} s(f; P)\) 存在，则称曲线 \(y = f(x)\) 可求长。记 \(P_n\) 为 \([a, b]\) 的 \(2^n\) 等分。证明：
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item \(\lim\limits_{n \to \infty} s(f; P_n)\) 存在；
+            \item 曲线 \(y = f(x)\) 可求长。
+        \end{enumerate}
+    \end{bbox}
+\end{qitems}
+\subsection{第十二届全国大学生数学竞赛初赛《数学类B卷》试题}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 已知椭球面 \(\Sigma_0 : \frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1, a > b\) 的外切柱面 \(\Sigma_\varepsilon (\varepsilon = 1 \text{ 或 } -1)\) 平行于已知直线
+        \[l_\varepsilon : \frac{x - 2}{0} = \frac{y - 1}{\varepsilon \sqrt{a^2 - b^2}} = \frac{z - 3}{c}\]
+        试求与 \(\Sigma_\varepsilon\) 交于一个圆周的平面的法方向。
+
+        注：本题中的外切柱面指的是每一条直母线均与已知椭球面相切的柱面。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(f(x)\) 在 \([0,1]\) 上连续，且 \(1 \leq f(x) \leq 3\)。证明：
+        \[1 \leq \int_{0}^{1} f(x) \, dx \int_{0}^{1} \frac{dx}{f(x)} \leq \frac{4}{3}\]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(A\) 为 \(n\) 阶复方阵，\(p(x)\) 为 \(A\) 的特征多项式，又设 \(g(x)\) 为 \(m\) 次复系数多项式，\(m \geq 1\)。证明：\(g(A)\) 可逆当且仅当 \(p(x)\) 与 \(g(x)\) 互素。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \(\sigma\) 为 \(n\) 维复向量空间 \(\mathbb{C}^n\) 的一个线性变换。$\bm{1}$表示恒等变换。证明以下两条等价：
+
+        \begin{enumerate}[label=(\arabic*)]
+            \item \(\sigma = k\bm{1}\), \(k \in \mathbb{C}\)；
+            \item 存在 \(\sigma\) 的 \(n + 1\) 个特征向量：\(v_1, \ldots, v_{n+1}\)，这 \(n + 1\) 个向量中任何 \(n\) 个向量均线性无关。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 计算广义积分 \(\int_{1}^{+\infty} \frac{(x)}{x^3} \, dx\)，这里 \((x)\) 表示 \(x\) 的小数部分（例如：当 \(n\) 为正整数且 \(x \in [n, n + 1)\) 时，则 \((x) = x - n\)）。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设函数 \(f(x)\) 在 \([0,1]\) 上连续，满足对任意 \(x \in [0,1]\)，
+        \[
+        \int_{x^2}^{x} f(t) \, dt \geq \frac{x^2 - x^4}{2}
+        \]
+        证明：
+        \[
+        \int_{0}^{1} f^2(x) \, dx \geq \frac{1}{10}
+        \]
+    \end{bbox}
+\end{qitems}
+\subsection{第十三届全国大学生数学竞赛初赛《数学类 A 卷》试题}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 设不全为零的$a,b,c\in\mathbb{R}$，求直线
+        \[
+        \frac{x-1}{a} = \frac{y-1}{b} = \frac{z-1}{c}
+        \]
+        绕$z$轴旋转所得的旋转曲面方程。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设$B\subset\mathbb{R}^n(n\geq2)$是单位开球，函数$u,v$在$B$上连续，在$B$内二阶连续可导，满足
+        \[
+        \begin{cases}
+        -\Delta u - (1 - u^2 - v^2)u = 0, & x \in B \\
+        -\Delta v - (1 - u^2 - v^2)v = 0, & x \in B \\
+        u(x) = v(x) = 0, & x \in \partial B
+        \end{cases}
+        \]
+        其中，$x = (x_1, x_2, \ldots, x_n)$，
+        \[
+        \Delta u = \frac{\partial^2 u}{\partial x_1^2} + \frac{\partial^2 u}{\partial x_2^2} + \cdots + \frac{\partial^2 u}{\partial x_n^2},
+        \]
+        $\partial B$表示$B$的边界。证明：
+        \[
+        u^2(x) + v^2(x) \leq 1 (\forall x \in \bar{B}).
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设$f(x) = x^{2021} + a_{2020}x^{2020} + a_{2019}x^{2019} + \cdots + a_2x^2 + a_1x + a_0$为整系数多项式，$a_0 \neq 0$。设对任意$0\leq k\leq2020$有$|a_k| \leq 40$，证明：$f(x) = 0$的根不可能全为实数。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设$P$为对称酉矩阵，证明：存在可逆复矩阵$Q$使得
+        \[
+        P = QQ^{-1}.
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设$\alpha > 1$，证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item 
+            \[
+            \int_{0}^{+\infty} dx \int_{0}^{+\infty} e^{-t^\alpha x} \sin x dt = \int_{0}^{+\infty} dt \int_{0}^{+\infty} e^{-t^\alpha x} \sin x dx.
+            \]
+            \item 计算
+            \[
+            \int_{0}^{+\infty} \sin x^3 dx \cdot \int_{0}^{+\infty} \sin x^{\frac{3}{2}} dx.
+            \]
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设$f,g$为$\mathbb{R}$上的非负连续可微函数，满足：$\forall x \in \mathbb{R}$，成立
+        \[
+        f'(x) \geq 6 + f(x) - f^2(x), \quad g'(x) \leq 6 + g(x) - g^2(x).
+        \]
+        证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item $\forall \varepsilon \in (0,1)$以及$x \in \mathbb{R}$，存在$\xi \in (-\infty,x)$使得
+            \[
+            f(\xi) \geq 3 - \varepsilon.
+            \]
+            \item $\forall x \in \mathbb{R}$，成立$f(x) \geq 3$。
+            \item $\forall x \in \mathbb{R}$，存在$\eta \in (-\infty,x)$使得$g(\eta) \leq 3$。
+            \item $\forall x \in \mathbb{R}$，成立$g(x) \leq 3$。
+        \end{enumerate}
+    \end{bbox}
+\end{qitems}
+\subsection{第十三届全国大学生数学竞赛初赛《数学类 B 卷》试题}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 设球面 \( S: x^2 + y^2 + z^2 = 1 \)，求以点 \( M_0(0,0,a) \) (\( a \in \mathbb{R}, |a| > 1 \)) 为顶点的与 \( S \) 相切的锥面方程。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( B \subset \mathbb{R}^n (n \geq 2) \) 是单位开球，函数 \( u,v \) 在 \( B \) 上连续，在 \( B \) 内二阶连续可导，满足
+        \[
+        \begin{cases}
+        -\Delta u - \left( 1 - u^2 - v^2 \right) u = 0, & x \in B \\
+        -\Delta v - \left( 1 - u^2 - v^2 \right) v = 0, & x \in B \\
+        u(x) = v(x) = 0, & x \in \partial B
+        \end{cases}
+        \]
+        其中，\( x = (x_1,x_2,\ldots,x_n) \)，
+        \[
+        \Delta u = \frac{\partial^2 u}{\partial x_1^2} + \frac{\partial^2 u}{\partial x_2^2} + \cdots + \frac{\partial^2 u}{\partial x_n^2},
+        \]
+        \(\partial B\) 表示 \( B \) 的边界。证明：
+        \[
+        u^2(x) + v^2(x) \leq 1 (\forall x \in \bar{B}).
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( f(x) = x^{2021} + a_{2020}x^{2020} + a_{2019}x^{2019} + \cdots + a_2x^2 + a_1x + a_0 \) 为整系数多项式，\( a_0 \neq 0 \)。设对任意 \( 0 \leq k \leq 2020 \) 有 \( |a_k| \leq 40 \)，证明：\( f(x) = 0 \) 的根不可能全为实数。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( R = \{0,1,-1\} \)，\( S \) 为 \( R \) 上的3阶行列式全体，即 
+        \[
+        S = \left\{ \det(a_{ij})_{3 \times 3} \mid a_{ij} \in R \right\}.
+        \]
+        证明：
+        \[
+        S = \{-4,-3,-2,-1,0,1,2,3,4\}.
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( f \) 在 \([-1,1]\) 内有定义，在 \( x = 0 \) 的某邻域内连续可导，且 
+        \(
+        \lim_{x \to 0} \frac{f(x)}{x} = a > 0.
+        \)
+        证明：级数 
+        \(
+        \sum_{n=1}^{\infty}(-1)^n f\left(\frac{1}{n}\right)
+        \)
+        收敛。
+    \end{bbox}
+        \begin{bbox}
+        \qitem (20分) 设函数 \( f(x) = \ln \sum_{n=1}^{\infty} \frac{e^{nx}}{n^2} \)。证明函数 \( f \) 在 \((-\infty,0)\) 内为严格凸的，并且对任意 \(\xi \in (-\infty,0)\)，存在 \( x_1, x_2 \in (-\infty,0)\) 使得
+        \[
+        f'(\xi) = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
+        \]
+        称 \((a,b)\) 内的函数 \( S \) 为严格凸的，如果对任何 \(\alpha \in (0,1)\) 以及 \( x, y \in (a,b), x \neq y \) 成立
+        \[
+        S(\alpha x + (1 - \alpha)y) < \alpha S(x) + (1 - \alpha)S(y)
+        \]
+    \end{bbox}
+\end{qitems}
+\subsection{第十三届全国大学生数学竞赛初赛补赛（数学类A卷）试题}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 设 \( S \) 为三维欧氏空间中的一个椭球面，\( P \) 为空间中的一个固定点，\( P \) 不在 \( S \) 上。对任意的 \( X \in S \)，记 \( X^* \) 是线段 \( PX \) 的中点。问：所有这样的点 \( X^* \) 构成的轨迹是什么？证明你的结论。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 计算积分 
+        \[ 
+        \int_{0}^{+\infty} \frac{x - x^2 + x^3 - x^4 + \cdots - x^{2018}}{(1 + x)^{2021}} \, dx. 
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( R = \{0, 1, 4, 9, 16\} \)，\( U \) 为 \( R \) 上的 3 阶方阵全体：
+        \[ 
+        U = \{(a_{ij})_{3 \times 3} | a_{ij} \in R\}. 
+        \]
+        例如，
+        \[
+        \begin{pmatrix}
+        1 & 1 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 0
+        \end{pmatrix},
+        \begin{pmatrix}
+        1 & 4 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 0
+        \end{pmatrix}
+        \]
+        便为 \( U \) 中的两元。现设 \( S \) 为 \( U \) 的一个子集。证明：若 \( S \) 的元素个数多于 \( 5^9 - 5^3 - 18 \)，则必存在不同的 \( A, B \in S \) 使得 \( AB = BA \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( a_1, a_2, a_3 \) 为满足 \( a_1^2 + a_2^2 + a_3^2 = 1 \) 的一组实数，\( b_1, b_2 \) 为满足 \( b_1^2 + b_2^2 = 1 \) 的一组实数。又设 \( M_1 \) 为 \( 5 \times 3 \) 矩阵，其每一行都为 \( a_1, a_2, a_3 \) 的一个排列；\( M_2 \) 是 \( 5 \times 2 \) 矩阵，其每一行都为 \( b_1, b_2 \) 的一个排列。令 \( M = (M_1, M_2) \)，它为 \( 5 \times 5 \) 矩阵。证明：
+
+        \begin{enumerate}[label=(\arabic*)]
+            \item \( (\mathrm{tr} \, M)^2 \leq (5 + 2\sqrt{6}) \, \mathrm{rank} \, M \)；
+            \item \( M \) 必有绝对值小于或等于 \( \sqrt{2} + \sqrt{3} \) 的实特征值 \( \lambda \)。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( a_k \in (0, 1), 1 \leq k \leq 2021 \)，且
+        \[
+        (a_{n+2021})^{2022} = a_n + a_{n+1} + a_{n+2} + \cdots + a_{n+2020},
+        \]
+        其中 \( n = 1, 2, \cdots \)。证明：\( \lim\limits_{n \to +\infty} a_n \) 存在。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 
+        \begin{enumerate}[label=(\arabic*)]
+            \item 证明：\( \lim\limits_{\alpha \to 0^+} \sum_{n=1}^{\infty} \frac{\cos \left(n + \frac{1}{2}\right)}{n^{1+\alpha}} = \sum_{n=1}^{\infty} \frac{\cos \left(n + \frac{1}{2}\right)}{n} \)；
+            \item 计算 \( \lim\limits_{\alpha \to 0^+} \sum_{n=1}^{\infty} \frac{\sin n}{n^{\alpha}} \)，并说明理由。
+        \end{enumerate}
+    \end{bbox}
+\end{qitems}
+\subsection{第十三届全国大学生数学竞赛初赛补赛（数学类B卷）试题}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 在空间直角坐标系Oxyz中，设 \( P = (a, b, c) \) 为第一卦限中的点(即 \( a, b, c > 0 \))。求过 \( P \) 点的平面 \(\sigma\) 的方程，它分别交 \( x \) 轴，\( y \) 轴和 \( z \) 轴的正轴于 \( A, B \) 和 \( C \) 三点，并使得 \( P \) 恰为三角形 \( ABC \) 的重心。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 计算积分 
+        \[ 
+        \int_{0}^{+\infty} \frac{x - x^2 + x^3 - x^4 + \cdots - x^{2018}}{(1 + x)^{2021}} \, dx 
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( R = \{0, 1, 4, 9, 16\} \)，\( U \) 为 \( R \) 上的3阶方阵全体：
+        \[ 
+        U = \left\{ (a_{ij})_{3 \times 3} \mid a_{ij} \in R \right\}
+        \]
+        例如，
+        \[
+        \begin{pmatrix}
+        1 & 1 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 0
+        \end{pmatrix},
+        \begin{pmatrix}
+        1 & 4 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 0
+        \end{pmatrix}
+        \]
+        便为 \( U \) 中的两元。现设 \( S \) 为 \( U \) 的一个子集。证明：若 \( S \) 的元素个数多于 \( 5^9 - 5^3 - 18 \)，则必存在不同的 \( A, B \in S \) 使得 \( AB = BA \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( a_1, \ldots, a_n \) 为和为1的 \( n \) 个正数 (\( n \geq 2 \))，\( A = (a_{ij})_{n \times n} \) 为 \( n \) 阶方阵，其每一行均是 \( a_1, \ldots, a_n \) 的一个排列。
+
+        \begin{enumerate}[label=(\arabic*)]
+            \item 设 \( V_1 \) 表示 \( A \) 关于特征值1的复特征向量空间，试计算 \( V_1 \) 的维数并给出 \( V_1 \) 的一组基。
+            \item 证明：1作为 \( A \) 的特征值，其代数量数也为1。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( I(f) = \int_{0}^{\pi} (\sin x - f(x))f(x) \, dx \)，求当遍历 \([0, \pi]\) 上所有连续函数 \( f \) 时 \( I(f) \) 的最大值。
+    \end{bbox}
+
+    \begin{bbox}
+        \begin{minipage}{0.48\textwidth}
+        \qitem (20分) 设 \( \alpha > 1, \Gamma_k = \left[ k^{\alpha}, \left( k + \frac{1}{2} \right)^{\alpha} \right] \cap \mathbb{N} (k \geq 1) \)。试判断级数 \(\sum_{n=1}^{\infty} a_n\) 的敛散性，其中
+        \[
+        a_n = 
+        \begin{cases} 
+        \frac{1}{n}, & \text{存在k使得} n = \min \Gamma_k, \\
+        \frac{1}{n^{\alpha}}, & \text{其他},
+        \end{cases}
+        \]
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.48\textwidth}
+        \qitem (20分) 设 \( \alpha > 1, \Gamma_k = \left[ k^{\alpha}, \left( k + \frac{1}{2} \right)^{\alpha} \right] \cap \mathbb{N} (k \geq 1) \)。试判断级数 \(\sum_{n=1}^{\infty} b_n\) 的敛散性，其中
+        \[
+        b_n = 
+        \begin{cases} 
+        \frac{1}{n}, & \text{存在k使得} n \in \Gamma_k, \\
+        \frac{1}{n^{\alpha}}, & \text{其他}.
+        \end{cases}
+        \]
+        \end{minipage}
+    \end{bbox}
+\end{qitems}
+\subsection{第十四届全国大学生数学竞赛预赛试题（数学 A 类， 2022 年）}
+
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 在空间直角坐标系中已知单叶双曲面 \( S \) 的方程为 \( x^2 + y^2 - z^2 = 1 \)。求过 \( P = (1, 1, 1) \) 点落在单叶双曲面 \( S \) 上的两条直线之间的夹角。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(\lim\limits_{n \to +\infty} \frac{a_n}{n^2} = a\)，\(\lim\limits_{n \to +\infty} \frac{b_n}{n^2} = b\)。证明极限
+        \[
+        \lim\limits_{n \to +\infty} \frac{1}{n^5} \sum_{k=0}^n a_k b_{n-k}
+        \]
+        存在并求其值。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( A = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix} \)，矩阵 \( B \) 与 \( A \) 可交换，其元素均为正整数且行列式为 1。证明存在正整数 \( k \) 使得 \( B = A^k \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( n \geq 2 \) 为正整数，证明多项式 \( f(x) = x^n - x - 1 \) 在有理数域 \( \mathbb{Q} \) 上不可约。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(\lim\limits_{n \to +\infty} \beta_n = 0\)，函数 \( f \) 在 \([-1, 2]\) 上有界，在 \([0, 1]\) 上 Riemann 可积。证明：
+        \[
+        \lim\limits_{n \to +\infty} \frac{1}{n} \sum_{k=1}^n f \left( \frac{k}{n} + \beta_n \right) = \int_0^1 f(x) \, dx.
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( f \) 在 \([0, +\infty)\) 的任意闭区间上 Riemann 可积。对于 \( x \geq 0 \)，定义 \( F(x) = \int_0^x t^\alpha f(t + x) \, dt \)。
+        
+        \begin{enumerate}[label=(\arabic*)]
+            \item 若 \( \alpha \in (-1, 0) \) 且 \(\lim\limits_{x \to +\infty} f(x) = A\)，证明：\( F \) 在 \([0, +\infty)\) 上一致连续。
+            \item 若 \( \alpha \in (0, 1) \)，\( f \) 以 \( T > 0 \) 为周期，\(\int_0^3 f(t) \, dt = 2022\)。证明：\( F \) 在 \([0, +\infty)\) 上非一致连续。
+        \end{enumerate}
+    \end{bbox}
+\end{qitems}
+\subsection{第十四届全国大学生数学竞赛预赛试题（数学 B 类， 2022 年）}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 空间直角坐标系中两平面 \( x + y + z - 3 = 0 \) 和 \( x - 2y - z + 2 = 0 \) 的交线为 \( L \)。求过点 \( (1, 2, 3) \) 并与直线 \( L \) 垂直的平面方程。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(\lim\limits_{n \to +\infty} \frac{a_n}{n^2} = a\)，\(\lim\limits_{n \to +\infty} \frac{b_n}{n^2} = b\)。证明极限 
+        \[
+        \lim\limits_{n \to +\infty} \frac{1}{n^5} \sum_{k=0}^n a_k b_{n-k}
+        \] 
+        存在并求其值。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( A = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix} \)，矩阵 \( B \) 与 \( A \) 可交换，其元素均为正整数且行列式为 1。证明存在正整数 \( k \) 使得 \( B = A^k \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( A = \begin{pmatrix} 2 & 0 & 1 \\ 4 & 1 & x \\ 4 & 0 & 5 \end{pmatrix} \)，\( B = \begin{pmatrix} \frac{8}{3} & y_1 & y_2 \\ y_2 & \frac{8}{3} & y_1 \\ y_1 & y_2 & \frac{8}{3} \end{pmatrix} \) 为复数域上的两个 3 阶方阵，其中 \( x, y_1, y_2 \) 为未知复数。若已知 \( A \) 与 \( B \) 有相同的 Jordan 标准型，求 \( x, y_1, y_2 \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设函数 \( f(x) = \frac{1}{1 - x - x^2} \)，\( a_n = \frac{1}{n!} f^{(n)}(0) \) (\( n \geq 0 \))。证明：级数 
+        \[
+        \sum_{n=0}^{\infty} \frac{a_{n+1}}{a_n a_{n+2}}
+        \] 
+        收敛并求它的和。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item 对任意 \( 0 < a < 1 \)，存在唯一实数 \( b > 1 \) 满足 \( a - \ln a = b - \ln b \);
+            \item 对于上述数对 \( a, b \) 有 \( ab < 1 \);
+            \item 对于上述数对 \( a, b \) 有 \( b + \ln a > 1 \)。
+        \end{enumerate}
+    \end{bbox}
+\end{qitems}
+\subsection{第十四届全国大学生数学竞赛初赛（补赛）试题（数学 A 类， 2022 年）}
+\begin{qitems}
+    \begin{bbox}
+        \qitem (15分) 已知圆柱面经过一条母线 \( L_1 : \frac{x-1}{1} = \frac{y-1}{0} = \frac{z-1}{1} \) 以及两点 \((0, 0, 2)\) 与 \((1, -1, -1)\)。求该圆柱面的方程表达式。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( f \) 是 \([0, 1]\) 上的凸函数，求证：
+        \[
+        \int_{0}^{1} t (1-t) f(t) dt \leq \frac{1}{3} \int_{0}^{1} \left( t^3 + (1-t)^3 \right) f(t) dt.
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( n \geq 2, A \) 为 \( n \) 阶实对称阵，
+        \[
+        v = (a_1, a_2, \cdots, a_n)^T, w = (b_1, b_2, \cdots, b_n)^T,
+        \]
+        分别是 \( A \) 关于其特征值 \(\mu_1, \mu_2\) 的实特征向量，\(\mu_1 \neq \mu_2\)。令
+        \[
+        B = 
+        \begin{pmatrix}
+        a_1 + b_1 & a_1 + b_2 & \cdots & a_1 + b_n \\
+        a_2 + b_1 & a_2 + b_2 & \cdots & a_2 + b_n \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_n + b_1 & a_n + b_2 & \cdots & a_n + b_n
+        \end{pmatrix}
+        \]
+        求矩阵 \( B \) 的所有特征值。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( A, B \) 为数域 \( K \) 上的两个 \( n \) 阶矩阵。若存在正整数 \( m \) 使得 \( AB - BA = A^m \)，证明对任何正整数 \( k \)，矩阵 \( A^k + E \) 的行列式等于 1，其中 \( E \) 为 \( n \) 阶单位矩阵。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( x_0, y_0 \in \mathbb{R} \)，对于 \( n \geq 0 \)，定义
+        \[
+        \begin{cases}
+        x_{n+1} = \frac{1}{x_n^2 + x_n y_n + 2y_n^2 + 1}, \\
+        y_{n+1} = \frac{1}{2x_n^2 + x_n y_n + y_n^2 + 1}
+        \end{cases}
+        \]
+        证明：(1) \(\lim\limits_{n \to +\infty} (x_n - y_n) = 0\)。(2) 点列 \(\{x_n\}\) 收敛。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \(\psi(s) = \int_{0}^{+\infty} \frac{\ln(1+sx)}{x(1+x)} dx\)。证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item \(\psi(1) = \frac{\pi^2}{6}\)。
+            \item 对于 \( s > 0 \)，有 \(\psi(s) + \psi\left(\frac{1}{s}\right) = \frac{\pi^2}{3} + \frac{1}{2} \ln^2 s\)。
+        \end{enumerate}
+    \end{bbox}
+\end{qitems}
+\subsection{第十四届全国大学生数学竞赛初赛（补赛）试题（数学 B 类， 2022 年）}
+\begin{qitems}
+
+    \begin{bbox}
+        \qitem (15分) 给定三个曲面 \(\pi_1 : x + y + z + 1 = 0\), \(\pi_2 : x + \lambda y + \mu z - 1 = 0\), \(\pi_3 : x + \lambda^2 y + \mu^2 z = 0\)，其中 \(\lambda, \mu \in \mathbb{R}\)。求 \(\pi_1, \pi_2, \pi_3\) 交于一点的条件，且求此时交点的坐标。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(f\) 是 \([0,1]\) 上的凸函数，证明：
+        \[
+        \int_{0}^{1} t(1-t)f(t)dt \leq \frac{1}{3}\int_{0}^{1}(t^3+(1-t)^3)f(t)dt
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(n \geq 2\), \(A\) 为 \(n\) 阶实对称矩阵，\(v = (a_1,\cdots,a_n)^T\) 和 \(w = (b_1,\cdots,b_n)^T\) 分别是 \(A\) 的属于特征值 \(\mu_1 \neq \mu_2\) 的特征向量。定义矩阵
+        \[
+        B = \begin{pmatrix}
+        a_1+b_1 & \cdots & a_1+b_n \\
+        \vdots & \ddots & \vdots \\
+        a_n+b_1 & \cdots & a_n+b_n 
+        \end{pmatrix}
+        \]
+        求 \(B\) 的所有特征值。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \(A = (a_{ij})\) 为 \(n\) 阶非负实矩阵，且对每个 \(i\) 满足 \(\sum\limits_{j\neq i,1\leqslant j\leqslant n}a_{ij} < 1\)。证明：\(\det(E+A) > 0\)，其中 \(E\) 为单位矩阵。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(f \in C^1[0,1] \cap C^3(0,1)\) 满足：
+        \[
+        f(0)=2,\ f(1)=1,\ f'(0)=0,\ f'(1)=4
+        \]
+        证明存在 \(\xi \in (0,1)\) 使得 \(f'''(\xi) = 24 + 24\xi\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 定义函数
+        \[
+        f_k(x) = \begin{cases}
+        \sin^k(\frac{1}{x}), & x \neq 0 \\
+        0, & x = 0
+        \end{cases}
+        \]
+        讨论 \(f_2\) 和 \(f_3\) 在 \(\mathbb{R}\) 上是否存在原函数，并证明你的结论。
+    \end{bbox}
+
+\end{qitems}
+\subsection{第十四届全国大学生数学竞赛初赛（第二次补赛）数学A类试题}
+\begin{qitems}
+
+    \begin{bbox}
+        \qitem (15分) 在空间直角坐标系中设单叶双曲面 \( S \) 的方程为 \( x^2 + y^2 - z^2 = 1 \)。求 \( S \) 上所有可能的点 \( P = (a, b, c) \)，使得过 \( P \) 点且落在 \( S \) 上的两条直线均平行于平面 \( x + y - z = 0 \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(\Gamma = \{ \{(x_n) | x_n = 0, 2\} \}\)，即 \(\Gamma\) 为全体各项为 0 或 2 的数列构成的集合。对于任何 \( x = \{x_n\} \in \Gamma \)，令
+        \[
+        \Pi(x) = \sum_{n=1}^{\infty} \frac{x_n}{3^n}, \quad f(x) = \overline{\lim_{n \to +\infty}} \frac{x_1 + x_2 + \cdots + x_n}{n}.
+        \]
+        证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item \(\Pi\) 是单射；
+            \item 集合 \(\Pi(\Gamma)\) 中的每一点均为 \(\Pi(\Gamma)\) 的聚点；
+            \item \(f(\Gamma) = [0, 2]\)。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( n \geq 2, A_1, A_2, \cdots, A_n \) 为数域 \( K \) 上的方阵，它们的极小多项式两两互素。证明：给定数域 \( K \) 上的任意多项式
+        \[
+        f_1(x), f_2(x), \cdots, f_n(x) \in K[x],
+        \]
+        存在多项式 \( f(x) \in K[x] \) 使得对所有 \( i = 1, 2, \cdots, n \)，有
+        \[
+        f(A_i) = f_i(A_i).
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( A, B \) 都是秩为 \( r \) 的 \( n \) 阶不可逆实矩阵，\( I \) 和 \( J \) 是集合 \(\{1, 2, \cdots, n\}\) 的两个 \( r+1 \) 元子集。用 \(\mathbb{R}^{n \times n}\) 表示所有 \( n \) 阶实矩阵构成的集合，令
+        \[
+        V = \{C = (c_{ij})_{n \times n} \in \mathbb{R}^{n \times n} | c_{ij} = 0, \text{若 } i \not\in I \text{ 或 } j \not\in J\}.
+        \]
+        证明：存在 \( 0 \neq C \in V \) 使得 \( ACB = 0 \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( f \) 与 \( g \) 在 \([a, b]\) 上可导，且对任何 \( x \in [a, b], g'(x) \neq 0 \)。又
+        \[
+        \int_a^b f(x) dx = \int_a^b f(x) g(x) dx = 0.
+        \]
+        证明：存在 \(\xi \in (a, b)\) 使得 \( f'(\xi) = 0 \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( A = \left\{ \sqrt{\frac{m}{n}} | m, n \in \mathbb{Z}^+ \right\} \setminus \mathbb{Q}, x_0 = \sum_{n=0}^{\infty} \frac{1}{10^{n!}} \)。
+        
+        对于 \( x > 0 \)，定义 \( f(x) = 
+        \begin{cases}
+        0, & x \text{无理数}, \\
+        \frac{1}{q^\alpha}, & x = \frac{p}{q} \text{为既约分数}.
+        \end{cases}\)
+        证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item 对任何 \( x \in A \)，存在常数 \( M_x > 0 \)，使得对任何既约分数 \( \frac{p}{q} \) 都有 \( \left| x - \frac{p}{q} \right| \geq \frac{M_x}{q^2} \)；
+            \item \( f \) 在 \( A \) 中的每个点可微的充要条件是 \( \alpha > 2 \)；
+            \item 对任何 \( \alpha \)，函数 \( f \) 在 \( x_0 \) 处均不可微。
+        \end{enumerate}
+    \end{bbox}
+
+\end{qitems}
+\subsection{第十四届全国大学生数学竞赛初赛（第二次补赛）数学 B 类试题}
+
+\begin{qitems}
+
+    \begin{bbox}
+        \qitem (15分) 设空间直角坐标系中三角形 \(ABC\) 的三个顶点坐标为：\(A(1,2,3)\), \(B(2,3,1)\), \(C(3,1,2)\)。\(M\) 为三角形 \(ABC\) 的二中线交点（重心）。求过点 \(M\) 的平面方程，该平面与三角形 \(ABC\) 垂直，且与直线 \(BC\) 平行。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(\Gamma = \left\{ \{(x_n)\mid x_n = 0,2\} \right\}\)，即 \(\Gamma\) 为全体各项为0或2的数列构成的集合。对于任何 \(x = \{x_n\} \in \Gamma\)，令
+        \[
+        \Pi(x) = \sum_{n=1}^{\infty} \frac{x_n}{3^n}, \quad f(x) = \overline{\lim_{n \to +\infty}} \frac{x_1 + x_2 + \cdots + x_n}{n}.
+        \]
+        证明：
+        \begin{enumerate}[label=(\arabic*)]
+            \item \(\Pi\) 是单射；
+            \item 集合 \(\Pi(\Gamma)\) 中的每一点均为 \(\Pi(\Gamma)\) 的聚点；
+            \item \(f(\Gamma) = [0,2]\)。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(n \geq 2\), \(A_1, A_2, \cdots, A_n\) 为数域 \(K\) 上的方阵，它们的极小多项式两两互素。证明：给定数域 \(K\) 上的任意多项式
+        \[
+        f_1(x), f_2(x), \cdots, f_n(x) \in K[x],
+        \]
+        存在多项式 \(f(x) \in K[x]\) 使得对所有 \(i = 1, 2, \cdots, n\)，有
+        \[
+        f(A_i) = f_i(A_i).
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设3阶实对称矩阵 \(A\) 的三个特征值为 \(-1, 1, 1\)。又 \(A\) 的与特征值 \(-1\) 相对应的一个特征向量为 \(p = 
+        \begin{pmatrix}
+        0 \\
+        0 \\
+        1
+        \end{pmatrix}\)，求 \(A\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(x \in [0,1]\), \(y_1 = \frac{x}{2}\), \(y_{n+1} = \frac{x - y_n^2}{2} (n \geq 1)\)。证明：
+        \[
+        \lim_{n \to +\infty} y_n
+        \]
+        存在并求其值。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \(a > 1\)。在 \([0,+\infty)\) 上定义函数 \(f\)：
+        \[
+        f(x) = 
+        \begin{cases}
+        -1, & x \in [0,a) \\
+        (-1)^{k+1}, & x \in [a^k, a^{k+1}), k \geq 1
+        \end{cases}
+        \]
+        定义 \(a_n = \int_0^n f(x) dx\)。求
+        \[
+        A \equiv \left\{ \beta \in \mathbb{R} \middle| \sum_{n=1}^\infty \frac{a_n}{n^\beta} \text{绝对收敛} \right\}
+        \]
+        以及
+        \[
+        B \equiv \left\{ \beta \in \mathbb{R} \middle| \sum_{n=1}^\infty \frac{a_n}{n^\beta} \text{收敛} \right\}
+        \]
+    \end{bbox}
+
+\end{qitems}
+\subsection{第十五届全国大学生数学竞赛初赛数学 A 类试题}
+\begin{qitems}
+
+    \begin{bbox}
+        \qitem (15分) 在空间中给定直线 \( L \) 及直线外定点 \( P \)。设 \( M \) 是过 \( P \) 点且与直线 \( L \) 相切的球面的球心。问：所有可能的球心 \( M \) 构成何种曲面？证明你的结论。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( f(x, y, z) = x^2 + (y^2 + z^2)(1 - x)^3 \)。
+        \begin{enumerate}[label=(\arabic*)]
+            \item 计算 \( f \) 的驻点；
+            \item 求 \( f \) 在 \( \Sigma \) 上的最小值，其中 \( \Sigma \) 是
+            \[\{(x, y, z) \mid |x| \leq 2, y^2 + z^2 \leq 4\}\]
+            的边界；
+            \item 求 \( f \) 在椭球 \( x^2 + \frac{y^2}{2} + \frac{z^2}{3} \leq 1 \) 上的最小值。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( V \) 是复数域 \( \mathbb{C} \) 上的 \( n \) 维线性空间，\( A \) 是 \( V \) 上的一个线性变换。证明：存在 \( \alpha \in V \) 使得
+        \(
+        \{\alpha, A\alpha, \cdots, A^{n-1}\alpha\}
+        \)
+        成为 \( V \) 的一组基当且仅当对于 \( A \) 的任一特征值 \( \lambda \) 的几何重数为 1。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( n \geq 3 \) 为自然数，\( \theta = \frac{2\pi}{n} \)。对任意 \( 1 \leq s, t \leq n \)，取 \( a_{st} = \sin(s + t)\theta \)，令矩阵 \( A = (a_{st})_{n \times n} \)，计算 \( E + A^{2023} \) 的行列式，其中 \( E \) 为 \( n \) 阶单位矩阵。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( E \subset \mathbb{R}^n \) 非空有界，\( c \in \mathbb{R}^n \)，\( c \) 非零。用
+        \[
+        \mathrm{diam}\, E = \sup_{x,y \in E} \|x - y\|
+        \]
+        表示 \( E \) 的直径，记 \( E + c = \{x + c \mid x \in E\} \)。证明：
+        \[
+        \mathrm{diam}\, E < \mathrm{diam}\,(E \cup (E + c))
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( a = \sqrt[3]{3} \), \( x_1 = a \), \( x_{n+1} = a^{x_n} \) (\( n = 1, 2, \ldots \))。证明：数列 \(\{x_n\}_{n=1}^{\infty}\) 极限存在，但不是 3。
+    \end{bbox}
+
+\end{qitems}
+\subsection{第十五届全国大学生数学竞赛初赛数学 B 类试题}
+\begin{qitems}
+
+    \begin{bbox}
+        \qitem (15分) 在空间中给定两不同点 \( P \) 和 \( Q \)。过 \( P \) 点直线 \( L(P) \) 和过 \( Q \) 点直线 \( L(Q) \) 正交于点 \( M \)。问：所有可能的正交点 \( M \) 构成何种曲面？证明你的结论。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( f(x, y, z) = x^2 + (y^2 + z^2)(1 - x)^3 \)。
+        \begin{enumerate}[label=(\arabic*)]
+            \item 计算 \( f \) 的驻点；
+            \item 求 \( f \) 在 \(\Sigma\) 上的最小值，其中 \(\Sigma\) 是
+            \[\{(x, y, z) \mid |x| \leq 2, y^2 + z^2 \leq 4\}\]
+            的边界；
+            \item 求 \( f \) 在椭球 \( x^2 + \frac{y^2}{2} + \frac{z^2}{3} \leq 1 \) 上的最小值。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( V \) 是复数域 \( \mathbb{C} \) 上的 \( n \) 维线性空间，\( A \) 是 \( V \) 上的一个线性变换。证明：存在 \( \alpha \in V \) 使得
+        \(
+        \{\alpha, A\alpha, \cdots, A^{n-1}\alpha\}
+        \)
+        成为 \( V \) 的一组基当且仅当 \( A \) 的任一特征值 \( \lambda \) 的几何重数为 1。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 证明对任意 \( n \) 阶方阵 \( A \)，存在主对角线上元素为 1 或 \(-1\) 的 \( n \) 阶对角矩阵 \( J \) 使得 \( A + J \) 可逆。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( f(x) = x^n(1 - x)^n \),
+        \[
+        F(x) = f(x) - f'(x) + f^{(4)}(x) - \cdots + (-1)^n f^{(2n)}(x)
+        \]
+        计算并化简
+        \(
+        \frac{d}{dx} \left( F'(x) \sin x - F(x) \cos x \right)
+        \)
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设非负函数 \( f \) 在 \([0, +\infty)\) 上连续可微，无穷积分
+        \(
+        \int_{0}^{+\infty} f(x) \, dx
+        \)
+        收敛，且存在 \([0, +\infty)\) 上的非负函数 \( g \)，使得
+        \(
+        f'(x) \leq g(x), \quad x \geq 0.
+        \)
+        分别就下列三种情形，证明
+        \[
+        \lim_{x \to +\infty} f(x) = 0.
+        \]
+        \begin{enumerate}[label=(\roman*)]
+            \item \(\int_{0}^{+\infty} g(x) \, dx\) 收敛；
+            \item \(g(x) = C > 0\)，其中 \(C\) 为常数；
+            \item \(g(x) = Cf^p(x)\)，其中 \(C > 0, p > 0\) 为常数。
+        \end{enumerate}
+    \end{bbox}
+
+\end{qitems}
+\subsection{第十六届全国大学生数学竞赛初赛数学 A 类试题}
+\begin{qitems}
+
+    \begin{bbox}
+        \qitem (15分) 设有双叶双曲面 \( S: x^2 + y^2 - z^2 = -2 \)，记以 \( M_0(1,1,-1) \) 为顶点且与 \( S \) 的上半叶 \( S^+ = \{(x,y,z) \in S | z \geq \sqrt{2}\} \) 相切的所有切线构成的锥面为 \(\Sigma\)。
+        \begin{enumerate}[label=(\arabic*)]
+            \item 求锥面 \(\Sigma\) 的方程；
+            \item 求 \( S^+ \cap \Sigma \) 所在平面 \(\pi\) 的方程。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(\varphi(t) = \int_{0}^{+\infty} \frac{\ln(1+tx^2)}{x(1+x^2)} \, dx, t \geq 0\)，求 \(\varphi(1), \varphi(2)\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( A = [a_{ij}]_{3 \times 3} \) 为实数域 \(\mathbb{R}\) 上的 3 阶不可逆方阵。若 \( A \) 的伴随矩阵 \( A^* = [a_{ij}^2]_{3 \times 3} \)，求 \( A \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 已知实数域 \(\mathbb{R}\) 上的一元多项式集合 \(\mathbb{R}[x]\) 在多项式加法和数乘下构成 \(\mathbb{R}\) 上的一个线性空间。设 \( f_i(x) \in \mathbb{R}[x] \) 且次数为 \( n_i, 1 \leq i \leq 2024 \)，规定零多项式的次数为 \( -\infty \)，已知 \(\sum_{i=1}^{2024} n_i < 2047276 \)，证明：\( f_1(x), f_2(x), \cdots, f_{2024}(x) \) 为空间 \(\mathbb{R}[x]\) 中线性相关的向量组。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 讨论级数 \(\sum_{n=2}^{\infty} \frac{(-1)^n}{n+(-1)^{[n]} \sqrt{n}}\)，\(\sum_{n=2}^{\infty} \frac{(-1)^n}{\sqrt{n+(-1)^{[n]}}}\) 的收敛性，其中 \([x]\) 表示 \( x \) 的整数部分。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 
+        \begin{enumerate}[label=(\arabic*)]
+            \item 设 \( f_1(t) = \dfrac{t+3}{2}, f_2(t) = \dfrac{t+6}{3} \)，\(\{n_k\}\) 为取值于 \(\{1,2\}\) 的整数列。令 \( F_1(t) = f_{n_1}(t), F_{k+1}(t) = F_k[f_{n_{k+1}}(t)](k \geq 1) \)。证明：对任何 \( x \in \mathbb{R} \)，极限 \(\lim_{k \to +\infty} F_k(x)\) 存在且与 \( x \) 无关。
+            \item 若题 (1) 中的 \( f_1, f_2 \) 改为 \( f_1(t) = t - \arctan t, f_2(t) = 2 \arctan t - t \)，结论如何？
+        \end{enumerate}
+    \end{bbox}
+
+\end{qitems}
+\subsection{第十六届全国大学生数学竞赛初赛数学 B 类试题}
+\begin{qitems}
+
+    \begin{bbox}
+        \qitem (15分) 已知单叶双曲面 \( S: x^2 + y^2 - z^2 = 1 \)。
+        \begin{enumerate}[label=(\arabic*)]
+            \item 求 \( S \) 上经过 \( M_0 (1, -1, 1) \) 点的两条不同族的直母线方程；
+            \item 求 \( S \) 上相互垂直的直母线交点的轨迹。
+        \end{enumerate}
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \(\varphi(t) = \int_{0}^{+\infty} \frac{\ln(1+tx^2)}{x(1+x^2)} \, dx, t \geq 0\)，求 \(\varphi(1), \varphi(2)\)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( A = [a_{ij}]_{3 \times 3} \) 为实数域 \( \mathbb{R} \) 上的3阶不可逆方阵。若 \( A \) 的伴随矩阵 \( A^* = [a_{ij}^2]_{3 \times 3} \)，求 \( A \)。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 设 \( f(x) \) 为定义在实数域 \( \mathbb{R} \) 上没有零点的实连续函数。若 \( f(2023) + f(2024) = 2025 \)，证明：对任意 \( x_1, x_2, \cdots, x_n \in \mathbb{R} \)，矩阵
+        \[
+        A = 
+        \begin{pmatrix}
+        1 + f(x_1) & f(x_2) & \cdots & f(x_n) \\
+        f(x_1) & 1 + f(x_2) & \cdots & f(x_n) \\
+        \vdots & \vdots & \ddots & \vdots \\
+        f(x_1) & f(x_2) & \cdots & 1 + f(x_n)
+        \end{pmatrix}
+        \]
+        均为可逆矩阵。
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (15分) 对于 \( n \geq 2 \)，
+        \[
+        E_n = \{ k \mid 1 \leq k^2 \leq n, k \in \mathbb{N} \}, \quad F_n = \{ \sqrt{k} \mid 1 \leq k \leq n, k \in \mathbb{N}, \sqrt{k} \notin \mathbb{N} \},
+        \]
+        其中 \( \mathbb{N} \) 为自然数集。令 \( A_n, B_n \) 依次为 \( E_n, F_n \) 中所有元素之和。计算极限
+        \[
+        \lim_{n \to +\infty} \frac{A_n}{n^{3/2}} \text{ 和 } \lim_{n \to +\infty} \frac{B_n}{n^{3/2}}, \text{ 并说明理由。}
+        \]
+    \end{bbox}
+
+    \begin{bbox}
+        \qitem (20分) 设 \( \alpha > 0 \) 是常数。又设 \(\{ x_n \}\) 和 \(\{ y_n \}\) 为正数列且满足
+        \[
+        x_1 = 2024, \quad y_1 = 20251109, \quad x_{n+1} + x_{n+1}^{1+\alpha} = x_n, \quad y_{n+1} + 2^{-\alpha} y_{n+1}^{1+\alpha} \leq y_n \quad (n \geq 1).
+        \]
+        \begin{enumerate}[label=(\arabic*)]
+            \item 证明数列 \(\{ n x_n^\alpha \}\) 收敛并求极限；
+            \item 证明：
+            \(
+            \overline{\lim_{n\to +\infty}}ny_n^{\alpha}\leq\dfrac{2^{\alpha}}{\alpha}
+            \)
+        \end{enumerate}
+    \end{bbox}
+
+\end{qitems}
+
+\end{document}
